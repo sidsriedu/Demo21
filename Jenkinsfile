@@ -13,6 +13,7 @@ pipeline {
             steps {
                 echo 'Building the application'
                 echo "Building version ${NEW_VERSION}"
+                sh 'mvn clean'
             }
 
         }
