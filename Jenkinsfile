@@ -18,6 +18,7 @@ pipeline {
                 echo 'Building the application'
                 echo "Building version ${NEW_VERSION}"
                 sh 'mvn clean'
+                sh 'mvn install'
             }
 
         }
